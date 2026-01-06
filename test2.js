@@ -1,7 +1,7 @@
 //import http
 const express = require('express')
 const http = require('http')
-const port = process.env.PORT || 3000;
+const port = process.env.PORT;
 
 //create server object
 const server = http.createServer((req, res) => {
@@ -14,6 +14,6 @@ server.listen(port, (err) => {
     if(err) {
         console.log("Error occured : ", err);
     } else {
-        console.log("Server started running at : " + port);
+        console.log("Server started running");
     }
 })
