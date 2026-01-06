@@ -1,19 +1,11 @@
-//import http
-const express = require('express')
-const http = require('http')
-const port = process.env.PORT;
+const express = require('express');
+const app = express();
 
-//create server object
-const server = http.createServer((req, res) => {
-    res.write("Hello from my server!");
-    res.end()
+app.get('/', (req, res) => {
+    res.send('Hello from my server!');
 });
 
-//server listens to port
-server.listen(port, (err) => {
-    if(err) {
-        console.log("Error occured : ", err);
-    } else {
-        console.log("Server started running");
-    }
-})
+const port = process.env.PORT || 3000;
+app.listen(port, () => {
+    console.log(`Server started on port ${port}`);
+});
