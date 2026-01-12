@@ -1,12 +1,15 @@
 body {
-    margin: 0;
-    height: 100vh; /* full viewport height */
-    background: linear-gradient(135deg, #a3cef1, #f0f4f8);
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-    display: flex;
-    position: relative; /* needed for absolute positioning */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #a3cef1, #f0f4f8);
+  height: 100vh;
+  position: relative; /* keeps buttons absolute on the left */
 }
 
+    background: linear-gradient(135deg, #a3cef1, #f0f4f8);
+
+/* This little paragraph needs fixing. It's supposed to resize it for mobiles but it doesn't do fuck all */
 @media (max-width: 600px) {
   button {
     padding: 16px 32px;
@@ -41,10 +44,9 @@ button:hover {
 }
 
 .center-gif {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .center-gif img {
