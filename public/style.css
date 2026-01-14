@@ -1,7 +1,7 @@
 body {
     margin: 0;
     height: 100vh; /* full viewport height */
-    background: background-colour(white);
+    background-color: (white);
     display: flex;
     position: relative; /* Needed for absolute positioning */
 }
@@ -17,16 +17,9 @@ body {
     }
 }
 
-/* Apply Lora to headers and buttons */
+/* Apply Lora font to headers and buttons */
 h1, h2, .buttons button {
     font-family: 'Lora', serif;
-}
-
-/* Putting main page header in center */
-h1, h2 {
-    text-align: center; /* centers text horizontally */
-    margin-top: 20px; /* space from top of page */
-    margin-bottom: 10px;  /* space between h1 and h2 */
 }
 
 h1 {
@@ -36,6 +29,14 @@ h1 {
 h2 {
     font-size: 1.5rem;
     font-weight: 400;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;      /* horizontal centering */
+    margin-top: 40px;
+    gap: 10px;                /* space between h1 and h2 */
 }
 
 .buttons {
@@ -71,7 +72,7 @@ button:hover {
 }
 
 .center-gif img {
-    max-width: 40%; /* keeps the gif from being huge */
+    max-width: 70%;            /* keeps the gif from being huge */
     height: auto;
 }
 
