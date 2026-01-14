@@ -1,9 +1,11 @@
 body {
     margin: 0;
     height: 100vh; /* full viewport height */
-    background-color: (white);
+    background-color: white;
     display: flex;
     position: relative; /* Needed for absolute positioning */
+    flex-direction: column; /* stack children vertically */
+    align-items: center;    /* horizontal centering */
 }
 
 /* This little paragraph needs fixing. It's supposed to resize it for mobiles but it doesn't do fuck all */
