@@ -19,3 +19,8 @@ app.listen(port, (err) => {
         console.log("Server started running at : http://localhost:" + port);
     }
 })
+
+//Best guess as to how to send blog button to blog.html
+app.get('/blog', (req, res) => {
+    res.sendFile(__dirname + '/public/blog.html');
+});

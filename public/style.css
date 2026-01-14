@@ -1,18 +1,25 @@
 body {
     margin: 0;
     height: 100vh; /* full viewport height */
-    background: linear-gradient(135deg, #a3cef1, #f0f4f8);
-    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background: background-colour(white);
     display: flex;
-    position: relative; /* needed for absolute positioning */
+    position: relative; /* Needed for absolute positioning */
 }
 
 /* This little paragraph needs fixing. It's supposed to resize it for mobiles but it doesn't do fuck all */
 @media (max-width: 600px) {
-  button {
-    padding: 16px 32px;
-    font-size: 20px;
-  }
+    .buttons {
+        position: static;
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+}
+
+/* Apply Lora to headers and buttons */
+h1, h2, .buttons button {
+    font-family: 'Lora', serif;
 }
 
 .buttons {
@@ -26,10 +33,9 @@ body {
 }
 
 button {
-    background-color: #a3cef1;
-    border: white;
+    background-color: white;
+    border: 1px black;
     padding: 12px 24px;
-    border-radius: 8px;
     cursor: pointer;
     font-size: 16px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
