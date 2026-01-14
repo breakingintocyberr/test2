@@ -25,7 +25,7 @@ h1, h2, .buttons button {
 /* Putting main page header in center */
 h1, h2 {
     text-align: center; /* centers text horizontally */
-    margin-top: 40px; /* space from top of page */
+    margin-top: 20px; /* space from top of page */
     margin-bottom: 10px;  /* space between h1 and h2 */
 }
 
