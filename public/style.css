@@ -22,6 +22,22 @@ h1, h2, .buttons button {
     font-family: 'Lora', serif;
 }
 
+/* Putting main page header in center */
+h1, h2 {
+    text-align: center; /* centers text horizontally */
+    margin-top: 40px; /* space from top of page */
+    margin-bottom: 10px;  /* space between h1 and h2 */
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
 .buttons {
     position: absolute;
     left: 20px;
