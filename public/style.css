@@ -92,7 +92,7 @@ button:hover {
 }
 
 .pictures img {
-    max-width: 70%;           /* keeps the image from being too big */
+    max-width: 50%;           /* keeps the image from being too big */
     height: auto;
     border: 2px solid #000;   /* optional border to match buttons */
     border-radius: 8px;       /* optional rounded corners */
