@@ -78,3 +78,44 @@ button:hover {
     height: auto;
 }
 
+/* Fucking with blog.html */
+.pictures {
+    display: flex;
+    flex-direction: column;
+    align-items: center;      /* centers everything horizontally */
+    margin-top: 40px;         /* space from top */
+    gap: 15px;                /* space between title, image, caption */
+    font-family: 'Lora', serif; /* match homepage font */
+}
+
+.pictures img {
+    max-width: 70%;           /* keeps the image from being too big */
+    height: auto;
+    border: 2px solid #000;   /* optional border to match buttons */
+    border-radius: 8px;       /* optional rounded corners */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* subtle shadow */
+}
+
+.pictures figcaption {
+    font-size: 1rem;
+    text-align: center;
+    color: #333;
+}
+
+/* Blog */
+.blog-posts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;      /* centers everything horizontally */
+    margin-top: 40px;         /* space from top */
+    gap: 20px;                /* space between posts */
+    font-family: 'Lora', serif;
+}
+
+.blog-post {
+    max-width: 800px;         /* keeps posts from stretching too wide */
+    padding: 20px;
+    border: 1px solid #ccc;   /* optional, for visual separation */
+    border-radius: 8px;
+    background-color: #f9f9f9; /* optional, subtle background */
+}
