@@ -122,3 +122,10 @@ button:hover {
     border-radius: 8px;
     background-color: #f9f9f9; /* optional, subtle background */
 }
+
+/* Blog pictures */
+.blog-pictures {
+    max-width: 800px;         /* keeps posts from stretching too wide */
+    padding: 20px;
+    border-radius: 8px;
+}
