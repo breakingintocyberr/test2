@@ -125,7 +125,7 @@ button:hover {
 
 /* Blog pictures */
 .blog-pictures {
-    max-width: 800px;         /* keeps posts from stretching too wide */
-    padding: 20px;
-    border-radius: 8px;
+  display: flex;
+    flex-direction: column;
+    align-items: center;      /* centers everything horizontally */
 }
