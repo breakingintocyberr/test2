@@ -132,6 +132,6 @@ button:hover {
 }
 
 .blog-pictures img {
-  width: 300px;      /* fixed size */
+  width: 100%;
   max-width: 100%;   /* prevents overflow on small screens */
 }
