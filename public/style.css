@@ -137,50 +137,50 @@ button:hover {
   max-width: 100%;   /* prevents overflow on small screens */
 }
 
-/* Instagram button */
+/* Container for social buttons */
 .social-container {
-    max-width: 100px;
-    height: auto;
+    display: flex;
+    gap: 15px;              /* space between buttons */
+    z-index: 1000;
 }
 
-/* Button styling */
+/* Default: vertical, center-right on other pages */
+body:not(.landing-page) .social-container {
+    position: fixed;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    flex-direction: column;  /* vertical */
+}
+
+/* Landing page: horizontal, centered */
+body.landing-page .social-container {
+    flex-direction: row;
+    justify-content: center;
+    margin: 20px auto;
+    position: static;        /* stays in normal flow */
+}
+
+/* Buttons themselves */
 .social-button {
     background: none;
     border: none;
     padding: 0;
     cursor: pointer;
-    font-size: 16px;
-    gap: 15px;
+}
+
+/* Images inside buttons */
+.social-button img {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    display: block;
     transition: transform 0.2s, box-shadow 0.2s;
 }
 
-/* Image inside button */
-.social-button a img {
-    width: 64px;      /* controls size of icon */
-    height: 64px;     /* keeps it square */
-    margin-left: 10px;    /* space between icons */
-    box-shadow: 0 4px 6px rgba(0,0,0,0.3); /* shadow wraps the image */
-    border-radius: 50%; /* optional: makes it circular */
-    gap: 15px;
-}
-
 /* Hover effect */
-.social-button a img:hover {
+.social-button img:hover {
     transform: translateY(-2px);
     box-shadow: 0 6px 10px rgba(0,0,0,0.15);
-}
-
-/* Landing page: center */
-body.landing-page .social-container {
-    text-align: center;
-    margin: 20px auto;
-}
-
-body:not(.landing-page) .social-container {
-    position: absolute;   /* remove from normal flow */
-    top: 50%;             /* start at 50% of viewport height */
-    right: 20px;          /* distance from the right edge */
-    transform: translateY(-50%); /* center vertically */
-    text-align: right;    /* keep text inside aligned right */
-    margin: 0;            /* override any previous margin */
 }
