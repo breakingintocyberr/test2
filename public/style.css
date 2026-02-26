@@ -38,7 +38,7 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;      /* horizontal centering */
-    margin-top: 400px;
+    margin-top: 350px;
     gap: 10px;                /* space between h1 and h2 */
 }
 
