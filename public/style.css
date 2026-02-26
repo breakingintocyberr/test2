@@ -150,6 +150,7 @@ button:hover {
     padding: 0;
     cursor: pointer;
     font-size: 16px;
+    gap: 15px;
     transition: transform 0.2s, box-shadow 0.2s;
 }
 
@@ -160,6 +161,7 @@ button:hover {
     margin-left: 10px;    /* space between icons */
     box-shadow: 0 4px 6px rgba(0,0,0,0.3); /* shadow wraps the image */
     border-radius: 50%; /* optional: makes it circular */
+    gap: 15px;
 }
 
 /* Hover effect */
