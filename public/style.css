@@ -139,8 +139,6 @@ button:hover {
 
 /* Instagram button */
 .social-container {
-    text-align: right;
-    margin-top: 20px;
     max-width: 100px;
 }
 
@@ -166,4 +164,15 @@ button:hover {
     height: 64px;     /* keeps it square */
     box-shadow: 0 4px 6px rgba(0,0,0,0.3); /* shadow wraps the image */
     border-radius: 50%; /* optional: makes it circular */
+}
+
+/* Landing page: center */
+body.landing-page .social-container {
+    text-align: center;
+    margin: 20px auto;
+}
+
+body:not(.landing-page) .social-container {
+    text-align: right;
+    margin: 20px 20px 0 auto; /* top/right spacing */
 }
