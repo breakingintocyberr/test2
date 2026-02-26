@@ -146,12 +146,11 @@ button:hover {
 
 /* Button styling */
 .social-button {
-    background-color: white;
-    border: 1px black;
-    padding: 12px 24px;
+    background: none;
+    border: none;
+    padding: 0;
     cursor: pointer;
     font-size: 16px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     transition: transform 0.2s, box-shadow 0.2s;
 }
 
@@ -165,4 +164,6 @@ button:hover {
 .social-button img {
     width: 32px;      /* controls size of icon */
     height: 32px;     /* keeps it square */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3); /* shadow wraps the image */
+    border-radius: 50%; /* optional: makes it circular */
 }
