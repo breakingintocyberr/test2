@@ -173,6 +173,6 @@ body.landing-page .social-container {
 }
 
 body:not(.landing-page) .social-container {
-    text-align: right;
+    text-align: center right;
     margin: 20px 20px 0 auto; /* top/right spacing */
 }
