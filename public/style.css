@@ -136,3 +136,9 @@ button:hover {
   width: 100%;
   max-width: 100%;   /* prevents overflow on small screens */
 }
+
+/* Instagram button */
+.social-container {
+    text-align: right;
+    margin-top: 20px;
+}
