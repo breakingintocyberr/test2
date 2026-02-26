@@ -140,6 +140,7 @@ button:hover {
 /* Instagram button */
 .social-container {
     max-width: 100px;
+    height: auto;
 }
 
 /* Button styling */
@@ -173,6 +174,10 @@ body.landing-page .social-container {
 }
 
 body:not(.landing-page) .social-container {
-    text-align: center right;
-    margin: 20px 20px 0 auto; /* top/right spacing */
+    position: absolute;   /* remove from normal flow */
+    top: 50%;             /* start at 50% of viewport height */
+    right: 20px;          /* distance from the right edge */
+    transform: translateY(-50%); /* center vertically */
+    text-align: right;    /* keep text inside aligned right */
+    margin: 0;            /* override any previous margin */
 }
