@@ -88,7 +88,7 @@ button:hover {
     margin: 40px auto 0 auto;
     text-align: center;       /* extra safeguard for inline content like text */
     margin-top: 40px;         /* space from top */
-    gap: 15px;                /* space between title, image, caption */
+    gap: 5px;                /* space between title, image, caption */
     font-family: 'Lora', serif; /* match homepage font */
 }
 
