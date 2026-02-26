@@ -162,8 +162,8 @@ button:hover {
 
 /* Image inside button */
 .social-button img {
-    width: 32px;      /* controls size of icon */
-    height: 32px;     /* keeps it square */
+    width: 64px;      /* controls size of icon */
+    height: 64px;     /* keeps it square */
     box-shadow: 0 4px 6px rgba(0,0,0,0.3); /* shadow wraps the image */
     border-radius: 50%; /* optional: makes it circular */
 }
