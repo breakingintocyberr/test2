@@ -140,28 +140,28 @@ button:hover {
 /* Container for social buttons */
 .social-container {
     display: flex;
-    gap: 15px;              /* space between buttons */
+    gap: 15px; /* spacing between buttons/logos */
     z-index: 1000;
 }
 
-/* Default: vertical, center-right on other pages */
+/* Right side, vertical */
 body:not(.landing-page) .social-container {
     position: fixed;
     top: 50%;
     right: 20px;
     transform: translateY(-50%);
-    flex-direction: column;  /* vertical */
+    flex-direction: column;
 }
 
-/* Landing page: horizontal, centered */
+/* Landing page, horizontal */
 body.landing-page .social-container {
     flex-direction: row;
     justify-content: center;
+    position: static;  /* normal flow */
     margin: 20px auto;
-    position: static;        /* stays in normal flow */
 }
 
-/* Buttons themselves */
+/* Buttons */
 .social-button {
     background: none;
     border: none;
@@ -169,7 +169,7 @@ body.landing-page .social-container {
     cursor: pointer;
 }
 
-/* Images inside buttons */
+/* Images */
 .social-button img {
     width: 64px;
     height: 64px;
@@ -179,7 +179,7 @@ body.landing-page .social-container {
     transition: transform 0.2s, box-shadow 0.2s;
 }
 
-/* Hover effect */
+/* Hover */
 .social-button img:hover {
     transform: translateY(-2px);
     box-shadow: 0 6px 10px rgba(0,0,0,0.15);
