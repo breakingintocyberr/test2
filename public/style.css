@@ -153,18 +153,19 @@ button:hover {
     transition: transform 0.2s, box-shadow 0.2s;
 }
 
-/* Hover effect */
-.social-button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 10px rgba(0,0,0,0.15);
-}
-
 /* Image inside button */
-.social-button img {
+.social-button a img {
     width: 64px;      /* controls size of icon */
     height: 64px;     /* keeps it square */
+    margin-left: 10px;    /* space between icons */
     box-shadow: 0 4px 6px rgba(0,0,0,0.3); /* shadow wraps the image */
     border-radius: 50%; /* optional: makes it circular */
+}
+
+/* Hover effect */
+.social-button a img:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 10px rgba(0,0,0,0.15);
 }
 
 /* Landing page: center */
