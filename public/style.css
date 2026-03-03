@@ -147,7 +147,7 @@ button:hover {
 body.landing-page .social-button {
     flex-direction: row;
     justify-content: center;
-    position: static;
+    position: fixed;
     margin: 20px
 }
 
