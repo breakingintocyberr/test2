@@ -145,7 +145,7 @@ button:hover {
     z-index: 1000;
 }
 
-body.landing-page .social-button {
+body.landing-page .social-container {
     flex-direction: row;
     justify-content: center;
     position: static;
