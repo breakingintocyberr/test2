@@ -148,7 +148,7 @@ body.landing-page .social-button {
     flex-direction: row;
     justify-content: center;
     position: static;
-    margin: 20px auto;
+    margin: 20px
 }
 
 body:not(.landing-page) .social-button {
@@ -156,6 +156,7 @@ body:not(.landing-page) .social-button {
     position: fixed;
     top: 50%;
     right: 20px;
+    gap: 20px;
     transform: translateY(-50%);
 }
 
