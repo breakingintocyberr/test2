@@ -141,6 +141,7 @@ button:hover {
 .social-container {
     display: flex;
     gap: 15px;       /* spacing between buttons */
+    align-items: center;
     z-index: 1000;
 }
 
