@@ -145,20 +145,20 @@ button:hover {
     z-index: 1000;
 }
 
-body.landing-page .social-button {
+body.landing-page .social-container {
     flex-direction: row;
     justify-content: center;
     position: static;
     margin: 20px
 }
 
-body:not(.landing-page) .social-button {
-    flex-direction: column;
+body:not(.landing-page) .social-container {
     position: fixed;
     top: 50%;
     right: 20px;
-    gap: 20px;
     transform: translateY(-50%);
+    flex-direction: column;
+    gap: 20px;
 }
 
 .social-button {
