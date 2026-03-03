@@ -144,14 +144,14 @@ button:hover {
     z-index: 1000;
 }
 
-body.landing-page .social-container {
+body.landing-page .social-button {
     flex-direction: row;
     justify-content: center;
     position: static;
     margin: 20px auto;
 }
 
-body:not(.landing-page) .social-container {
+body:not(.landing-page) .social-button {
     flex-direction: column;
     position: fixed;
     top: 50%;
