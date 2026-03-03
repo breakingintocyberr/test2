@@ -152,7 +152,7 @@ body.landing-page .social-container {
     margin: 20px
 }
 
-body:not(.landing-page) .social-container {
+body:not(.landing-page) .social-button {
     flex-direction: column;
     position: fixed;
     top: 50%;
