@@ -167,6 +167,7 @@ body:not(.landing-page) .social-button {
     border: none;
     padding: 0;
     cursor: pointer;
+    outline: 1px solid red;
 }
 
 .social-button img {
