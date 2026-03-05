@@ -189,3 +189,12 @@ body:not(.landing-page) .social-button {
     flex-direction: column;
     align-items: center;      /* centers everything horizontally */
 }
+
+.timer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;      /* centers everything horizontally */
+    gap: 20px;                /* space between elements */
+    margin-top: 40px;         /* space from top */
+    font-family: 'Lora', serif;
+}
