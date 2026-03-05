@@ -130,7 +130,6 @@ button:hover {
     display: flex;
     flex-direction: column;
     align-items: center;      /* centers everything horizontally */
-    max-width: 100%;
 }
 
 .blog-pictures img {
