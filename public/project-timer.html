@@ -53,17 +53,16 @@
             minutes = 0;
             hours++;
         }
-
     // Update display
     display.textContent = `${hours}:${minutes < 10 ? '0' : ''}${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
 
     // Save total seconds silently
     const totalSeconds = (hours * 3600) + (minutes * 60) + seconds;
-    localStorage.setItem("display", totalSeconds);
+    localStorage.setItem("projectTimer", totalSeconds);
 
 }, 1000);
-        }
-
+}
+}
         function stopTimer() {
             if (intervalId !== null) {
                 clearInterval(intervalId);
