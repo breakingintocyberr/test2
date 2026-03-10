@@ -27,7 +27,7 @@
         let intervalId = null;
         const display = document.getElementById('display');
 
-        let saved = localStorage.getItem("projectTimer");
+        let saved = localStorage.getItem("display");
         if (saved) {
         let total = parseInt(saved);
         hours = Math.floor(total / 3600);
@@ -59,7 +59,7 @@
 
     // Save total seconds silently
     const totalSeconds = (hours * 3600) + (minutes * 60) + seconds;
-    localStorage.setItem("projectTimer", totalSeconds);
+    localStorage.setItem("display", totalSeconds);
 
 }, 1000);
         }
