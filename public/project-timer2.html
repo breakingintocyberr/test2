@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Project Timers</title>
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class = "buttons">
+        <button onclick="location.href='/index.html'">Home</button>
+        <button onclick="location.href='/blog'">Blog</button>
+        <button onclick="location.href='/pictures.html'">Pictures</button>
+        <button onclick="location.href='/experience.html'">Experience</button>
+        <button onclick="location.href='/project-timer.html'">Project Timer 1</button>
+    </div>
+
+    <div class="timer">
+    <h2><span id="display">0</span> seconds</h2>
+    <button onclick="startTimer()">Start</button>
+    <button onclick="stopTimer()">Stop</button>
+
+    <script>
+    let seconds = 0;
+    let minutes = 0;
+    let hours = 0;
+    let intervalId = null;
+    const display = document.getElementById('display');
+    let saved = localStorage.getItem("display");
+
+    function startTimer() {
+        if (intervalId !== null) return;
+
+        if (typeof(Storage) !== "undefined") {
+            intervalId = setInterval(() => {
+                seconds++;
+
+                if (seconds === 60) {
+                    seconds = 0;
+                    minutes++;
+                }
+                if (minutes === 60) {
+                    minutes = 0;
+                    hours++;
+                }
+            }, 1000);
+        }
+    }
+
+    function stopTimer() {
+        if (intervalId !== null) {
+            clearInterval(IntervalId);
+            intervalId = null;
+        }
+    }
