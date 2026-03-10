@@ -16,7 +16,7 @@
     </div>
 
     <div class="timer">
-    <h2>Timer: <span id="display">0</span> seconds</h2>
+    <h2><span id="display">0</span> seconds</h2>
     <button onclick="startTimer()">Start</button>
     <button onclick="stopTimer()">Stop</button>
 
@@ -27,24 +27,41 @@
         let intervalId = null;
         const display = document.getElementById('display');
 
+        let saved = localStorage.getItem("projectTimer");
+        if (saved) {
+        let total = parseInt(saved);
+        hours = Math.floor(total / 3600);
+        minutes = Math.floor((total % 3600) / 60);
+        seconds = total % 60;
+        display.textContent = `${hours}:${minutes < 10 ? '0' : ''}${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+}
+
         function startTimer() {
             if (intervalId !== null) return; // exit function early
+
+            if (typeof(Storage) !== "undefined") {
 
             intervalId = setInterval(() => {
                 seconds++;
 
-                if (seconds === 60) {
-                    seconds = 0;
-                    minutes++;
-                }
+            if (seconds === 60) {
+            seconds = 0;
+            minutes++;
+        }
 
-                if (minutes === 60) {
-                    minutes = 0;
-                    hours++;
-                }
+            if (minutes === 60) {
+            minutes = 0;
+            hours++;
+        }
 
-                display.textContent = `${hours}:${minutes < 10 ? '0' : ''}${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
-            }, 1000); // 1000ms = 1 second
+    // Update display
+    display.textContent = `${hours}:${minutes < 10 ? '0' : ''}${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+
+    // Save total seconds silently
+    const totalSeconds = (hours * 3600) + (minutes * 60) + seconds;
+    localStorage.setItem("projectTimer", totalSeconds);
+
+}, 1000);
         }
 
         function stopTimer() {
@@ -53,6 +70,7 @@
                 intervalId = null;
             }
         }
+
     </script>
     </div>
 </body>
