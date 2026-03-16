@@ -29,9 +29,9 @@
     const display = document.getElementById('display');
     let saved = localStorage.getItem("display");
 
+    // Create Start button function with interval.
     function startTimer() {
         if (intervalId !== null) return;
-
         if (typeof(Storage) !== "undefined") {
             intervalId = setInterval(() => {
                 seconds++;
@@ -44,13 +44,18 @@
                     minutes = 0;
                     hours++;
                 }
+                const totalSeconds = hours * 3600 + minutes * 60 + seconds;
+                localStorage.setItem("display", totalSeconds);
+                updateDisplay();
             }, 1000);
         }
     }
-
+    
     function stopTimer() {
         if (intervalId !== null) {
-            clearInterval(IntervalId);
+            clearInterval(intervalId);
             intervalId = null;
         }
     }
+    </script>
+    </div>
